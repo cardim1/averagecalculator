@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header><img src="./images/logo.png" alt="capelo e diploma">
+        <h1>Average Calculator</h1>
+    </header>
+    <form id="form-activity">
+        <input type="text" id="nome-activity" required placeholder="Activity name" />
+        <input type="number" id="nota-activity" required placeholder="Grade" min="0" max="10" />
+        <button type="sumbit">Add+</button>
+    </form>
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <th>
+                    Activity Name
+                </th>
+                <th>
+                    Activity Grade
+                </th>
+                <th>Approved?</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Final Average</td>
+                <td id="media-final-valor">---</td>
+                <td id="media-final-resultado">---
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
